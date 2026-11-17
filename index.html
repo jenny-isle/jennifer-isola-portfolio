@@ -203,6 +203,11 @@
   .t-logo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
   .tcard .stars{color:#f2a63b;font-size:18px;letter-spacing:3px}
   .tcard .who{margin-left:auto;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  nav ul{gap:22px;align-items:center}
+  nav ul a{white-space:nowrap}
+  .nav-cta{white-space:nowrap;display:inline-block;line-height:1.2}
+  @media(max-width:1180px){nav ul li.opt{display:none}}
+  @media(max-width:860px){nav ul li:not(:last-child){display:none}}
   .approach{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
   @media(max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
@@ -244,11 +249,11 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#work">Brands</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#agency">Agency</a></li>
+      <li class="opt"><a href="#reviews">Reviews</a></li>
+      <li class="opt"><a href="#agency">Agency</a></li>
       <li><a href="#together">Working together</a></li>
-      <li><a href="#approach">Approach</a></li>
-      <li><a href="#services">Services</a></li>
+      <li class="opt"><a href="#approach">Approach</a></li>
+      <li class="opt"><a href="#services">Services</a></li>
       <li><a href="#contact" class="nav-cta">Work with me</a></li>
     </ul>
   </div>
